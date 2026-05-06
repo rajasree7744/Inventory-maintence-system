@@ -1,0 +1,208 @@
+{
+  "entities": {
+    "Product": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "title": "Product",
+      "type": "object",
+      "description": "Represents a computer hardware product available in the inventory for sale.",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique identifier for the Product entity."
+        },
+        "name": {
+          "type": "string",
+          "description": "The name of the computer hardware product (e.g., NVIDIA RTX 5090)."
+        },
+        "price": {
+          "type": "number",
+          "description": "The selling price of the product in Indian Rupees (₹)."
+        },
+        "quantity": {
+          "type": "number",
+          "description": "The current stock quantity available for the product."
+        },
+        "description": {
+          "type": "string",
+          "description": "A detailed description of the product's features and specifications."
+        },
+        "category": {
+          "type": "string",
+          "description": "The category of the product (e.g., GPU, CPU, RAM, SSD, Monitor)."
+        },
+        "brand": {
+          "type": "string",
+          "description": "The brand name of the product manufacturer (e.g., NVIDIA, Intel, Corsair, Samsung)."
+        },
+        "imageUrl": {
+          "type": "string",
+          "description": "A direct URL to a high-quality image of the product.",
+          "format": "uri"
+        },
+        "features": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Key technical highlights of the product."
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "price",
+        "quantity",
+        "description",
+        "category",
+        "brand",
+        "imageUrl"
+      ]
+    },
+    "Sale": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "title": "Sale",
+      "type": "object",
+      "description": "Records a completed purchase transaction of a specific product by a customer.",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique identifier for the Sale entity."
+        },
+        "productId": {
+          "type": "string",
+          "description": "Reference to the Product that was purchased."
+        },
+        "customerName": {
+          "type": "string",
+          "description": "The full name of the customer who made the purchase."
+        },
+        "contact": {
+          "type": "string",
+          "description": "The customer's contact information."
+        },
+        "address": {
+          "type": "string",
+          "description": "The shipping or billing address."
+        },
+        "quantity": {
+          "type": "number",
+          "description": "The quantity purchased."
+        },
+        "timestamp": {
+          "type": "string",
+          "description": "Transaction recorded time.",
+          "format": "date-time"
+        }
+      },
+      "required": [
+        "id",
+        "productId",
+        "customerName",
+        "contact",
+        "address",
+        "quantity",
+        "timestamp"
+      ]
+    },
+    "Feedback": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "title": "Feedback",
+      "type": "object",
+      "description": "Customer feedback for a specific product.",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique identifier."
+        },
+        "productId": {
+          "type": "string",
+          "description": "Product reference."
+        },
+        "rating": {
+          "type": "number",
+          "description": "Star rating 1-5."
+        },
+        "comment": {
+          "type": "string",
+          "description": "Textual comment."
+        },
+        "defect": {
+          "type": "boolean",
+          "description": "Defect reported."
+        },
+        "createdAt": {
+          "type": "string",
+          "description": "Submission time.",
+          "format": "date-time"
+        }
+      },
+      "required": [
+        "id",
+        "productId",
+        "rating",
+        "comment",
+        "defect",
+        "createdAt"
+      ]
+    },
+    "Alert": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "title": "Alert",
+      "type": "object",
+      "description": "Automated system alerts.",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique identifier."
+        },
+        "message": {
+          "type": "string",
+          "description": "Nature of alert."
+        },
+        "type": {
+          "type": "string",
+          "description": "Category of alert."
+        },
+        "createdAt": {
+          "type": "string",
+          "description": "Generation time.",
+          "format": "date-time"
+        }
+      },
+      "required": [
+        "id",
+        "message",
+        "type",
+        "createdAt"
+      ]
+    }
+  },
+  "auth": {
+    "providers": [
+      "password",
+      "anonymous"
+    ]
+  },
+  "firestore": {
+    "products": {
+      "schema": "Product",
+      "description": "Stores hardware products."
+    },
+    "sales": {
+      "schema": "Sale",
+      "description": "Records purchase transactions."
+    },
+    "feedback": {
+      "schema": "Feedback",
+      "description": "Customer reviews."
+    },
+    "alerts": {
+      "schema": "Alert",
+      "description": "System alerts."
+    },
+    "admins": {
+      "schema": "object",
+      "description": "Admin UID collection."
+    }
+  }
+}

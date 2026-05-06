@@ -1,0 +1,6 @@
+{
+  "workbench.startupEditor": "readme",
+  "files.watcherExclude": {
+    "**/target": true
+  }
+}

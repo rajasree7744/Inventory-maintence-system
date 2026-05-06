@@ -1,0 +1,124 @@
+{
+  "placeholderImages": [
+    {
+      "id": "gpu-rtx-5090",
+      "description": "NVIDIA GeForce RTX 5090 Graphics Card",
+      "imageUrl": "https://picsum.photos/seed/5090/600/400",
+      "imageHint": "graphics card gpu"
+    },
+    {
+      "id": "cpu-i9-14900k",
+      "description": "Intel Core i9-14900K Processor",
+      "imageUrl": "https://picsum.photos/seed/14900/600/400",
+      "imageHint": "cpu processor"
+    },
+    {
+      "id": "ram-corsair",
+      "description": "Corsair Dominator Titanium DDR5 RAM",
+      "imageUrl": "https://picsum.photos/seed/ram/600/400",
+      "imageHint": "ram memory"
+    },
+    {
+      "id": "ssd-samsung",
+      "description": "Samsung 990 Pro 2TB NVMe SSD",
+      "imageUrl": "https://picsum.photos/seed/ssd/600/400",
+      "imageHint": "ssd storage"
+    },
+    {
+      "id": "mobo-asus",
+      "description": "ASUS ROG Maximus Z790 Dark Hero",
+      "imageUrl": "https://picsum.photos/seed/mobo/600/400",
+      "imageHint": "motherboard pc"
+    },
+    {
+      "id": "psu-seasonic",
+      "description": "Seasonic PRIME TX-1600 Titanium",
+      "imageUrl": "https://picsum.photos/seed/psu/600/400",
+      "imageHint": "power supply"
+    },
+    {
+      "id": "case-lianli",
+      "description": "Lian Li O11 Dynamic EVO XL",
+      "imageUrl": "https://picsum.photos/seed/case/600/400",
+      "imageHint": "pc case"
+    },
+    {
+      "id": "cooler-noctua",
+      "description": "Noctua NH-D15 chromax.black",
+      "imageUrl": "https://picsum.photos/seed/cooler/600/400",
+      "imageHint": "cpu cooler"
+    },
+    {
+      "id": "gpu-rtx-4090",
+      "description": "NVIDIA GeForce RTX 4090 Founders Edition",
+      "imageUrl": "https://picsum.photos/seed/4090/600/400",
+      "imageHint": "gpu nvidia"
+    },
+    {
+      "id": "cpu-ryzen-7950x",
+      "description": "AMD Ryzen 9 7950X 16-Core Processor",
+      "imageUrl": "https://picsum.photos/seed/7950/600/400",
+      "imageHint": "cpu amd"
+    },
+    {
+      "id": "monitor-odyssey",
+      "description": "Samsung Odyssey Neo G9 49-inch Curved",
+      "imageUrl": "https://picsum.photos/seed/monitor/600/400",
+      "imageHint": "gaming monitor"
+    },
+    {
+      "id": "keyboard-k100",
+      "description": "Corsair K100 RGB Mechanical Keyboard",
+      "imageUrl": "https://picsum.photos/seed/keyboard/600/400",
+      "imageHint": "mechanical keyboard"
+    },
+    {
+      "id": "mouse-superlight",
+      "description": "Logitech G Pro X Superlight 2",
+      "imageUrl": "https://picsum.photos/seed/mouse/600/400",
+      "imageHint": "gaming mouse"
+    },
+    {
+      "id": "gpu-7900xtx",
+      "description": "AMD Radeon RX 7900 XTX Graphics",
+      "imageUrl": "https://picsum.photos/seed/7900/600/400",
+      "imageHint": "gpu amd"
+    },
+    {
+      "id": "ram-gskill",
+      "description": "G.Skill Trident Z5 RGB 32GB DDR5",
+      "imageUrl": "https://picsum.photos/seed/trident/600/400",
+      "imageHint": "ram ddr5"
+    },
+    {
+      "id": "ssd-wdblack",
+      "description": "WD_BLACK 4TB SN850X NVMe SSD",
+      "imageUrl": "https://picsum.photos/seed/wd/600/400",
+      "imageHint": "nvme ssd"
+    },
+    {
+      "id": "cooler-kraken",
+      "description": "NZXT Kraken Elite 360 RGB AIO",
+      "imageUrl": "https://picsum.photos/seed/kraken/600/400",
+      "imageHint": "liquid cooler"
+    },
+    {
+      "id": "psu-corsair",
+      "description": "Corsair RM1000x Shift 80+ Gold",
+      "imageUrl": "https://picsum.photos/seed/rm1000/600/400",
+      "imageHint": "power supply"
+    },
+    {
+      "id": "case-nzxt",
+      "description": "NZXT H9 Flow Dual-Chamber Case",
+      "imageUrl": "https://picsum.photos/seed/h9/600/400",
+      "imageHint": "pc case"
+    },
+    {
+      "id": "monitor-alienware",
+      "description": "Alienware AW3423DW QD-OLED Monitor",
+      "imageUrl": "https://picsum.photos/seed/alien/600/400",
+      "imageHint": "oled monitor"
+    }
+  ]
+}
